@@ -1,8 +1,8 @@
 ## Projeto referente ao jogo Genius criado a partir da plataforma DIO
 
-### Tecnologias utilizadas:
+### Techs:
 
-    * HTML básico
-    * CSS básico
-    * Javascript básico
+    * HTML
+    * CSS
+    * Vanilla JavaScript
 
