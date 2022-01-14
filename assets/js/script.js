@@ -46,8 +46,11 @@ let checkOrder = () => {
 
   if (clickedOrder.length == order.length) {
     score++
-    swal(`Score: ${score}\n Você acertou!`, 'Passando para próximo nível!', 'success')
-    .then(() => {
+    swal(
+      `Score: ${score}\n Você acertou!`,
+      'Passando para próximo nível!',
+      'success'
+    ).then(() => {
       nextLevel()
     })
   }
@@ -69,19 +72,12 @@ let createColorElement = (color) => {
   switch (color) {
     case 0:
       return green
-      break
     case 1:
       return red
-      break
     case 2:
       return yellow
-      break
-    case 3:
-      return blue
-      break
     default:
-      return
-      break
+      return blue
   }
 }
 
@@ -91,23 +87,25 @@ let nextLevel = () => {
 }
 
 // função para game over
-let gameOver = () => {  
-    swal(`Score: ${score}!\nVocê perdeu.\n`, 'Clique em ok para continuar...', 'error')
-    .then(() => {
-      order = []
-      clickedOrder = []
-    
-      playGame()
-    })
+let gameOver = () => {
+  swal(
+    `Score: ${score}!\nVocê perdeu.\n`,
+    'Clique em ok para continuar...',
+    'error'
+  ).then(() => {
+    order = []
+    clickedOrder = []
+
+    playGame()
+  })
 }
 
 // função inicio do jogo
-let playGame = () => {  
-    score = 0
-    swal('Bem vindo ao Genius!', 'Iniciando novo jogo...', 'info')
-    .then(() => {
-      nextLevel()
-    })  
+let playGame = () => {
+  score = 0
+  swal('Bem vindo ao Genius!', 'Iniciando novo jogo...', 'info').then(() => {
+    nextLevel()
+  })
 }
 
 //eventos de clique para as cores
