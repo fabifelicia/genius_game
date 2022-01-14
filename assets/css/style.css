@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
     margin: 0;
     background-color: #ddd;
+    font-family: 'Poppins', sans-serif;
 }
 
 .main-game {
@@ -15,8 +18,8 @@ body {
     display:grid;
     grid-template-areas: 'verde vermelho' 'amarelo azul';
     grid-gap: 10px;
-    border: 10px solid #fff;
-    background-color: #fff;
+    border: 10px solid #000;
+    background-color: #000;
     border-radius: 100%;    
     width: 600px;
     height: 600px;
@@ -32,7 +35,7 @@ body {
 .red {
     grid-area: vermelho;
     background-color: red;
-    border-top-right-radius: 100%;
+    border-top-right-radius: 100%;    
 }
 
 .green {
