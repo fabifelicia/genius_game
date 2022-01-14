@@ -6,3 +6,6 @@
     * CSS
     * Vanilla JavaScript
 
+### Libraries
+
+    * SweetAlert
