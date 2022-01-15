@@ -9,3 +9,6 @@
 ### Libraries
 
     * SweetAlert
+    
+### Badges
+[![CodeFactor](https://www.codefactor.io/repository/github/fabifelicia/genius_game/badge)](https://www.codefactor.io/repository/github/fabifelicia/genius_game)
