@@ -38,13 +38,13 @@ let lightColor = (element, time) => {
 // checa se aos botões clicados são os mesmos da ordem gerada
 let checkOrder = () => {
   for (let i in clickedOrder) {
-    if (clickedOrder[i] != order[i]) {
+    if (clickedOrder[i] !== order[i]) {
       gameOver()
       break
     }
   }
 
-  if (clickedOrder.length == order.length) {
+  if (clickedOrder.length === order.length) {
     score++
     swal(
       `Score: ${score}\n Você acertou!`,
@@ -69,16 +69,13 @@ let click = (color) => {
 
 // função que retorna a cor
 let createColorElement = (color) => {
-  switch (color) {
-    case 0:
-      return green
-    case 1:
-      return red
-    case 2:
-      return yellow
-    default:
-      return blue
+  const colorChoosed = {
+    0 : green,
+    1 : red,
+    2 : yellow,
+    3 : blue
   }
+  return colorChoosed[color]
 }
 
 // função para próximo nível
